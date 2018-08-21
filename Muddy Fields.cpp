@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 int r,c;
 int matrix[50][50];
@@ -22,7 +23,7 @@ bool dfs(int u)
             }
         }
     }
-    return 0;
+    return false;
 }
 
 int maxmatch()
@@ -63,7 +64,7 @@ int main()
             if(matrix[i][j] == 0 && !flag)
                 flag = 1, rmat[i][j] = rcnt++;
             else if(matrix[i][j] == 0 && flag)
-                rmat[i][j] = rcnt;
+                rmat[i][j] = rcnt - 1;
             else
                 flag = 0;
         }
@@ -77,7 +78,7 @@ int main()
             if(matrix[i][j] == 0 && !flag)
                 flag = 1, cmat[i][j] = ccnt++;
             else if(matrix[i][j] == 0 && flag)
-                cmat[i][j] = ccnt;
+                cmat[i][j] = ccnt - 1;
             else
                 flag = 0;
         }
@@ -86,7 +87,9 @@ int main()
     for(int i = 0; i < r; ++i)
         for(int j = 0; j < c; ++j)
             if(matrix[i][j]==0)
+            {
                 g[rmat[i][j]][cmat[i][j]] = 1;
+            }
 
     cout << maxmatch() << endl;
     return 0;
