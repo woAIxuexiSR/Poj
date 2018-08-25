@@ -1,3 +1,5 @@
+/* 二分预测成绩，验证是否可以满足 */
+
 #include<iostream>
 #include<iomanip>
 #include<algorithm>
