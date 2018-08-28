@@ -1,5 +1,5 @@
 exefile = hh.exe
-cfile = Trie.cpp
+cfile = hh.cpp
 
 $(exefile): $(cfile)
 	g++ $(cfile) -o $(exefile) -g
