@@ -1,2 +1,5 @@
-hh.exe: hh.cpp
-	g++ hh.cpp -o hh.exe -g
+exefile = hh.exe
+cfile = ATP.cpp
+
+$(exefile): $(cfile)
+	g++ $(cfile) -o $(exefile) -g
