@@ -1,11 +1,3 @@
-/* There are N gas stations on a straight, M kilo-meters long highway.
- The i-th gas station is Ai kilo-meters away from the beginning of the highway. 
- (It is guaruanteed that there is one gas station at each end of the highway)
-
- Now the mayor can build K more gas stations. 
- He wants to minimize the maximum distance between two adjacent gas station. 
- Can you help him? */
-
 #include<iostream>
 #include<queue>
 #include<iomanip>

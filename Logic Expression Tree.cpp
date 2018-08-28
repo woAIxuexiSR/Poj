@@ -1,13 +1,3 @@
-/*  输入
-    The first line contains an integer N. (1 <= N <= 100)
-    The i-th line of the following N lines contains an integer Pi and a string Si. 
-    Pi denotes the number of the i-th node's parent node. Pi = 0 indicates that the i-th node is the root. (0 <= Pi <= N)
-    Si is either TRUE, FALSE, AND or OR denoting the boolean value or logic operator of the node.
-
-    输出
-    The minimum number of operators needed to be reversed. 
-    If you cannot reverse the value no matter how many operators are reversed output -1. */
-
 #include<iostream>
 #include<string>
 #include<algorithm>

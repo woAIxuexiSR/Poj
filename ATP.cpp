@@ -12,11 +12,11 @@ bool check(int t)
     for(int i = 0; i < turn; ++i) {
         int len = p.size();
         for(int j = 0; j < len; ++j) {
-            int k = (p[j] - k) > 0 ? p[j] - k : 1;
+            int m = (p[j] - k) > 0 ? p[j] - k : 1;
             bool flag = 0;
-            for(; k <= n; ++k) {
-                if(!vis[k]) {
-                    vis[k] = 1; p.push_back(k);
+            for(; m <= n; ++m) {
+                if(!vis[m]) {
+                    vis[m] = 1; p.push_back(m);
                     flag = 1; break;
                 }
             }
